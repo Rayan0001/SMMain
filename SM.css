@@ -512,10 +512,10 @@
 #app-mount .tutorialContainer__1f388 .childWrapper__6e9f8:has(svg)::after {
     position: absolute;
     content: "";
-    width: 36px;
-    height: 36px;
-    top: 6px;
-    left: 6px;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    left: 5px;
     background-image: linear-gradient(-45deg, #ffd700, #ff9f00);
     background-repeat: no-repeat;
     background-size: contain;
