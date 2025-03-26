@@ -3532,17 +3532,30 @@ button.button__67645>.contents__201d5>svg>path[fill*="var(--interactive-normal)"
 }
 
 .title__85643 svg {
-    content: url("https://tr.rbxcdn.com/180DAY-f12442c705ecec31e941d2d6c170a906/420/420/Decal/Webp/noFilter");
-    width: 24px; 
-    height: 24px;
+    display: none; /* Hide the original Discord logo */
 }
 
-.defaultColor__4bd52[data-text-variant="text-sm/medium"]::before {
-    content: "SYNTHESIS"; 
-    color: #ffcc00;
+.title__85643::before {
+    content: "";
+    display: inline-block;
+    width: 24px; 
+    height: 24px;
+    background-image: url("https://tr.rbxcdn.com/180DAY-f12442c705ecec31e941d2d6c170a906/420/420/Decal/Webp/noFilter");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 8px; 
+}
+
+.title__85643 .defaultColor__4bd52 {
+    color: #ffcc00 !important; 
     font-weight: bold;
 }
 
-.defaultColor__4bd52[data-text-variant="text-sm/medium"] {
-    color: transparent;
+.title__85643 .defaultColor__4bd52::before {
+    content: "SYNTHESIS MANUFACTURING CO."; 
+}
+
+.title__85643 .defaultColor__4bd52::after {
+    content: "";
 }
