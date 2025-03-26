@@ -3553,8 +3553,12 @@ button.button__67645>.contents__201d5>svg>path[fill*="var(--interactive-normal)"
 .title__85643 .defaultColor__4bd52 {
     color: #ffcc00 !important;
     font-weight: bold;
+    white-space: nowrap;
+    overflow: visible;
     visibility: hidden;
     position: relative;
+    display: inline-block;
+    max-width: none;
 }
 
 .title__85643 .defaultColor__4bd52::before {
@@ -3562,5 +3566,6 @@ button.button__67645>.contents__201d5>svg>path[fill*="var(--interactive-normal)"
     visibility: visible;
     position: absolute;
     left: 0;
-    width: 100%;
+    width: auto;
+    white-space: nowrap;
 }
