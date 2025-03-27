@@ -2,13 +2,13 @@
 @import url("https://xcruxiex.github.io/themes/core/hljs.css");
 
 :root {
-    --backgroundColor01: #1e2731;
+    --backgroundColor01: #12171d;
     --backgroundColor02: #12171d;
-    --mainColor: #2275c9;
-    --gradientColor01: #00f260;
-    --gradientColor02: #0575e6;
-    --backgroundCode: #1e2731;
-    --backgroundName: rgba(0, 0, 0, 0.2);
+    --mainColor: #f7aa05;
+    --gradientColor01: #f7aa05;
+    --gradientColor02: #f7aa05;
+    --backgroundCode: #f7aa05;
+    --backgroundName: #12171d;
     --rs-small-spacing: 2px;
     --rs-medium-spacing: 3px;
     --rs-large-spacing: 4px;
