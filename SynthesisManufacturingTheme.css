@@ -3568,4 +3568,9 @@ button.button__67645>.contents__201d5>svg>path[fill*="var(--interactive-normal)"
     left: 0;
     width: auto;
     white-space: nowrap;
+    font-size: 2vw;
+}
+
+.icon_f34534.guildIcon__85643.iconSizeMini_f34534.iconActiveMini_f34534 {
+    display: none !important;
 }
