@@ -3585,3 +3585,7 @@ button.button__67645>.contents__201d5>svg>path[fill*="var(--interactive-normal)"
 /* .scroller__36d07 .customTheme_d125d2 .auto_d125d2 .scrollerBase_d125d2 .disableScrollAnchor_d125d2 .managedReactiveScroller_d125d2 {
     background-color: var(--backgroundColor01) !important;
 } */
+
+.form_f75fb0.formWithLoadedChatInput_f75fb0 {
+    background-color: var(--backgroundColor01) !important;
+}
