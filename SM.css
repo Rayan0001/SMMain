@@ -3613,3 +3613,36 @@ button.button__67645>.contents__201d5>svg>path[fill*="var(--interactive-normal)"
 .header_fed6d3 {
     background-color: var(--backgroundColor01) !important;
 }
+
+
+.title_bb0d86 svg {
+    display: none !important;
+}
+
+.title_bb0d86::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url("https://github.com/Rayan0001/SMMain/blob/main/SMLogoOrange.png?raw=true");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.title_bb0d86 .defaultColor__4bd52 {
+    color: #ffcc00 !important;
+    font-weight: bold;
+    visibility: hidden;
+    position: relative;
+}
+
+.title_bb0d86 .defaultColor__4bd52::before {
+    content: "SYNTHESIS MANUFACTURING CO";
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
