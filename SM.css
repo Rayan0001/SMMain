@@ -3615,10 +3615,19 @@ button.button__67645>.contents__201d5>svg>path[fill*="var(--interactive-normal)"
 }
 
 
-.title_bb0d86 svg {
+/* Hide the guild/server mini logo */
+.title_bb0d86 .icon_f34534.guildIcon_bb0d86 {
     display: none !important;
 }
 
+/* Reset title layout */
+.title_bb0d86 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Add your SM logo */
 .title_bb0d86::before {
     content: "";
     display: inline-block;
@@ -3628,13 +3637,16 @@ button.button__67645>.contents__201d5>svg>path[fill*="var(--interactive-normal)"
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 6px;
-    vertical-align: middle;
 }
 
+/* Replace the text */
 .title_bb0d86 .defaultColor__4bd52 {
     color: #ffcc00 !important;
     font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     visibility: hidden;
     position: relative;
 }
