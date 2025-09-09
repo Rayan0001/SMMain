@@ -3615,19 +3615,21 @@ button.button__67645>.contents__201d5>svg>path[fill*="var(--interactive-normal)"
 }
 
 
-/* Hide the guild/server mini logo */
-.title_bb0d86 .icon_f34534.guildIcon_bb0d86 {
+.title_bb0d86 .icon_f34534,
+.title_bb0d86 svg {
     display: none !important;
 }
 
-/* Reset title layout */
+/* Reset the title box */
 .title_bb0d86 {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
+    overflow: visible !important;
+    white-space: nowrap !important;
 }
 
-/* Add your SM logo */
+/* Add SM logo */
 .title_bb0d86::before {
     content: "";
     display: inline-block;
@@ -3639,22 +3641,28 @@ button.button__67645>.contents__201d5>svg>path[fill*="var(--interactive-normal)"
     background-position: center;
 }
 
-/* Replace the text */
+/* Force text to always show fully */
 .title_bb0d86 .defaultColor__4bd52 {
-    color: #ffcc00 !important;
     font-weight: bold;
     font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    color: #ffcc00 !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    flex: none !important;
+}
+
+/* Replace any existing text with SM company name */
+.title_bb0d86 .defaultColor__4bd52::before {
+    content: "SYNTHESIS MANUFACTURING CO";
+}
+.title_bb0d86 .defaultColor__4bd52 {
     visibility: hidden;
     position: relative;
 }
-
 .title_bb0d86 .defaultColor__4bd52::before {
-    content: "SYNTHESIS MANUFACTURING CO";
     visibility: visible;
     position: absolute;
     left: 0;
-    width: 100%;
+    right: 0;
 }
